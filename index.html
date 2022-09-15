@@ -6,15 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=" stylesheet" href="style.css">
     <script src = "script.js" defer></script>
-
-    <title>Rock Paper Scissors</title>
+     <title>Rock Paper Scissors</title>
 </head>
-
 <body>
-    <div id="container">
-        <button id = '1' class = 'Rock'>Rock</button>
-        <button id = '2' class = 'Paper'>Paper</button>
-        <button id = '3' class = 'Scissors'>Scissors</button>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score-container">
+     <div class="score-board">
+        <div id = "user-label" class="badge">user</div>
+        <div id = "computer-label" class="badge">comp</div>
+        <span id= "user-score">0</span>:<span id= "computer-score">0</span>
+     </div>
+
+     <div class="result">
+        <p>Paper covers rock.You win!</p>
+     </div>
+    
+
+    <div class="choices">
+        <div class="choice" id="r">
+        <button type="rock"> <img src = "images/rock.png"></button>
+        </div>
+        <div class="choice" id="p">
+        <button type="paper"> <img src="images/paper.png"></button>
+        </div>
+        <div class="choice" id="s">
+        <button type="scissors"> <img src="images/scissors.png"></button>
+        </div>
+    </div>
+
+    <p id="action-message">Click your button of choice!</p>
+    <button id="refresh">Game Reset</button>
     </div>
 </body>
 
